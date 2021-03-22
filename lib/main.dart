@@ -85,10 +85,13 @@ class _MyHomePageState extends State<MyHomePage> {
       selectedDayTextStyle: TextStyle(
         color: Colors.yellow,
       ),
+      pageScrollPhysics: ScrollPhysics(),
       weekDayMargin: EdgeInsets.zero,
       weekDayPadding: EdgeInsets.zero,
       todayBorderColor: Colors.transparent,
       todayButtonColor: Colors.transparent,
+      pageSnapping: true,
+      shouldShowTransform: false,
       customDayBuilder: (
         bool isSelectable,
         int index,
